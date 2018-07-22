@@ -12,6 +12,11 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
+/**
+ * @author Pavel Zakhvatov (zkhwtf@mm.st)
+ * @version 1
+ */
+
 //Для написания тестов использовал Selenide
 public class FirstTest {
 
@@ -57,7 +62,7 @@ public class FirstTest {
     }
 
     @AfterClass
-    public static void logout(){
+    public static void logout() {
         $(byCssSelector("[stl='menu_logout']")).shouldBe(visible).click(); //Нажатие на кнопку ВЫХОД
     }
 
